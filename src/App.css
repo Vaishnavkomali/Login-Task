@@ -1,0 +1,310 @@
+/* General Body Styling */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap');
+body {
+  margin: 0;
+  font-family: "Poppins", Arial, sans-serif;
+  background-color: #f9f9f9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+/* Wrapper for Side Image and Container */
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 150px; /* Space between image and container */
+  max-width: 900px;
+}
+
+/* Side Image Styling */
+.image {
+  flex: 1;
+  max-width: 300px;
+}
+
+.image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Container Styling */
+.container {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 400px;
+}
+
+/* Header Styling */
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.header h1 {
+  font-size: 24px;
+  margin: 0;
+  color: #4a4a4a;
+}
+
+.header h1 span {
+  color: rgb(99, 88, 200);
+}
+
+/* Button Styling */
+button {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-weight: 400;
+  transition: box-shadow 0.3s ease;
+}
+
+button:hover {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.google-btn,
+.facebook-btn {
+  background-color: #ffffff;
+  color: #333;
+  border: 1px solid #e2e2e2;
+}
+
+.google-btn img,
+.facebook-btn img {
+  width: 20px;
+}
+
+/* Input Group with Floating Icons */
+.input-group {
+  position: relative;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px 15px;
+  padding-left: 40px; /* Space for the icon */
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+  background-color: #f4f4f4;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.input-group input:focus {
+  border-color: #6c63ff;
+  background-color: #fff;
+}
+
+.input-group img.input-icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  pointer-events: none;
+}
+
+/* Placeholder Styling */
+input::placeholder {
+  font-weight: bold;
+  color: #999;
+}
+
+/* Remember Me Checkbox */
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 15px;
+}
+
+.checkbox-container input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  accent-color: #6c63ff; /* Modern browser support for checkbox color */
+}
+
+/* Forgot Password Link */
+.link {
+  text-align: right;
+  font-size: 12px;
+  color: rgb(99, 88, 200);
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+/* Submit Button */
+.submit-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: rgb(99, 88, 200);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.submit-btn:hover {
+  background-color: #574b90;
+}
+
+/* Footer Link */
+.footer {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.footer a {
+  color: #6c63ff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+
+.divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 20px 0;
+  font-weight: normal;
+  color: black;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid #bfbfbf;
+  margin: 0 10px;
+}
+
+
+/* Main Page Styling */
+.main-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f9f9f9;
+
+}
+
+.main-title {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 113px;
+  font-weight: bold;
+}
+
+.card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  max-width: 400px;
+}
+
+.profile-pic {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.user-name {
+  font-size: 1.5rem;
+  margin: 0.5rem 0;
+}
+
+.user-email,
+.user-gender {
+  font-size: 1rem;
+  color: #383838;
+  margin: 0.3rem 0;
+}
+
+.logout-btn {
+  background-color: rgb(99, 88, 200);
+  color: #fff;
+  border-color:#e2e2e2 ;
+  padding: 10px 0px;
+  font-size: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 1.5rem;
+}
+
+.logout-btn:hover {
+  background-color: #554cc6;
+}
+
+
+.profile-container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px; /* Adjust gap above the profile card */
+}
+
+/* Styling for the image */
+.profile-image {
+  width: 150px; /* Adjust the size as needed */
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 10px; /* Adjust gap below the image */
+}
+
+/* Styling for the profile details */
+.profile-details {
+  text-align: center;
+  font-size: 1rem;
+  color: #333;
+}
+
+.brand
+{
+  margin-top: auto;
+  margin-left: 12px;
+  color: rgb(99, 88, 200);
+  font-weight:bolder;
+  transform: scale(1.1);
+}
+
+.user-name
+{
+  color: rgb(99, 88, 200);
+}
+
